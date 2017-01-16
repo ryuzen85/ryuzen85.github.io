@@ -27,7 +27,7 @@
 
 
 
-  <meta name="keywords" content="ryuzen,linux,cloud compute,iaas,kvm,python,java,openstack,zstack" />
+  <meta name="keywords" content="原创,安装教程,nodejs,linux,nvm,npm加速," />
 
 
 
@@ -36,16 +36,16 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description" content="this is a test post1test post!!!!">
+<meta name="description" content="如何安装nodejs环境，win&amp;linux, npm加速">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test_post">
-<meta property="og:url" content="http://blog.ryuzen.com/2017/01/12/test-post/index.html">
+<meta property="og:title" content="如何安装nodeJS环境 How to install nodeJS env">
+<meta property="og:url" content="http://blog.ryuzen.com/2017/01/14/how-install-node-env/index.html">
 <meta property="og:site_name" content="RyuZen Blog">
-<meta property="og:description" content="this is a test post1test post!!!!">
-<meta property="og:updated_time" content="2017-01-12T13:57:59.122Z">
+<meta property="og:description" content="如何安装nodejs环境，win&amp;linux, npm加速">
+<meta property="og:updated_time" content="2017-01-16T06:05:09.648Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test_post">
-<meta name="twitter:description" content="this is a test post1test post!!!!">
+<meta name="twitter:title" content="如何安装nodeJS环境 How to install nodeJS env">
+<meta name="twitter:description" content="如何安装nodejs环境，win&amp;linux, npm加速">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -55,7 +55,7 @@
   };
 </script>
 
-  <title> test_post | RyuZen Blog </title>
+  <title> 如何安装nodeJS环境 How to install nodeJS env | RyuZen Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -139,6 +139,14 @@
           <a href="/about" rel="section">
             <i class="menu-item-icon icon-next-about"></i> <br />
             关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-todo">
+          <a href="/todo" rel="section">
+            <i class="menu-item-icon icon-next-todo"></i> <br />
+            todo
           </a>
         </li>
       
@@ -293,6 +301,11 @@
       <div class="main-inner">
         <div id="content" class="content"> 
 
+
+
+
+
+
   <div id="posts" class="posts-expand">
     
 
@@ -305,7 +318,7 @@
           
           
             
-              test_post
+              如何安装nodeJS环境 How to install nodeJS env
             
           
         </h1>
@@ -314,11 +327,26 @@
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2017-01-12T21:56:50+08:00" content="2017-01-12">
-            2017-01-12
+          <time itemprop="dateCreated" datetime="2017-01-14T18:39:35+08:00" content="2017-01-14">
+            2017-01-14
           </time>
         </span>
 
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/IT技能-编程语言-nodeJS/" itemprop="url" rel="index">
+                  <span itemprop="name">IT技能-编程语言-nodeJS</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
         
 
         
@@ -333,12 +361,35 @@
       
 
       
-        <span itemprop="articleBody"><h2 id="this-is-a-test-post1"><a href="#this-is-a-test-post1" class="headerlink" title="this is a test post1"></a>this is a test post1</h2><p>test post!!!!</p>
+        <span itemprop="articleBody"><h3 id="摘要-Summary"><a href="#摘要-Summary" class="headerlink" title="摘要(Summary)"></a><a href="http://blog.ryuzen.com/2017/01/14/how-install-node-env/">摘要</a>(Summary)</h3><p>win &amp; linux 安装nodeJS， 使用nvm管理不同版本nodeJS， 国内npm加速<br>win&amp;linux install nodejs, use NVM manage diff version nodejs, speed up download in chinese</p>
+<h3 id="nvm简介-nvm-intro"><a href="#nvm简介-nvm-intro" class="headerlink" title="nvm简介( nvm intro)"></a><a href="http://blog.ryuzen.com/2017/01/14/how-install-node-env/">nvm简介</a>( nvm intro)</h3><p>  nvm可以管理不同版本nodejs，不影响系统。win系统使用nvwm替代nvm<br>  NVM can manage different version of nodejs, make your OS clean. BTW, windows use nvwm instead</p>
+<h4 id="shell代码如下-linux或OSX"><a href="#shell代码如下-linux或OSX" class="headerlink" title="shell代码如下(linux或OSX)"></a>shell代码如下(linux或OSX)</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> https://github.com/creationix/nvm.git</div><div class="line"><span class="built_in">source</span> nvm/nvm.sh</div><div class="line"><span class="comment">#国内用户运行下面一条(chinese user need below statement)</span></div><div class="line">NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node</div><div class="line"><span class="comment">#安装node-v6(Install nodejs-v6)</span></div><div class="line">nvm install 6</div></pre></td></tr></table></figure>
+<h4 id="win系统-If-use-windows"><a href="#win系统-If-use-windows" class="headerlink" title="win系统 (If use windows)"></a><a href="http://blog.ryuzen.com/2017/01/14/how-install-node-env/">win系统</a> (If use windows)</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#如果win用户没装gitbash，可以直接下载zip文件解压(If windows user didn't install gitbash, you can download zip file by http)</span></div><div class="line"> git <span class="built_in">clone</span> https://github.com/hakobera/nvmw.git</div><div class="line"><span class="comment">#设置 d:\git\nvmw 目录到你的 PATH 环境变量中(add path)</span></div><div class="line"><span class="built_in">set</span> <span class="string">"PATH=d:\git\nvmw;%PATH%"</span></div><div class="line"><span class="comment">#加速npm从国内下载(speed up your npm in chinese)</span></div><div class="line"><span class="built_in">set</span> <span class="string">"NVMW_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node"</span></div><div class="line">nvm install 6</div></pre></td></tr></table></figure>
+<h3 id="国内npm加速-speed-up-your-npm-in-chinese"><a href="#国内npm加速-speed-up-your-npm-in-chinese" class="headerlink" title="国内npm加速(speed up your npm in chinese)"></a><a href="http://blog.ryuzen.com/2017/01/14/how-install-node-env/">国内npm加速</a>(speed up your npm in chinese)</h3><p>npm是nodejs的包管理工具，类似apt-get。但是默认是从国外下载包，所以使用的时候可以选择国内镜像加速。<br>(npm is a package management tool of nodejs, like apt-get in debain. But by default it download from ocean website, so you can choose to speed your npm up)</p>
+<p>简单可以每次运行npm install的时候加registry参数。(simplely add <em>registry</em> arg when you  run npm install )<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm --registry=https://registry.npm.taobao.org install koa</div></pre></td></tr></table></figure></p>
+<p>但是每次都要输registry很麻烦。可以加入<a href="http://blog.ryuzen.com/2017/01/14/how-install-node-env/">环境变量</a>ENV(linux)/PATH(win)里面(If you don’t want to type resigisty everytime, you can add it in ENV/PATH )</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">export</span> NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node</div></pre></td></tr></table></figure>
 </span>
       
     </div>
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/原创/" rel="tag">#原创</a>
+          
+            <a href="/tags/安装教程/" rel="tag">#安装教程</a>
+          
+            <a href="/tags/nodejs/" rel="tag">#nodejs</a>
+          
+            <a href="/tags/linux/" rel="tag">#linux</a>
+          
+            <a href="/tags/nvm/" rel="tag">#nvm</a>
+          
+            <a href="/tags/npm加速/" rel="tag">#npm加速</a>
+          
+        </div>
       
 
       
@@ -359,6 +410,49 @@
       
     </footer>
   </article>
+
+
+
+<div class="post-footer">
+    
+      <div id="eof" class="print-invisible">
+        <hr class="eof">
+      </div>
+
+      <div class="copyright" style="clear:both;">
+         <span>本文标题:</span><a href="/2017/01/14/how-install-node-env/">如何安装nodeJS环境 How to install nodeJS env</a>
+         <br><span>文章作者:</span><a href="/" title="访问 RyuZen Luo 的个人博客">RyuZen Luo</a>
+         <br><span>发布时间:</span>2017年1月14日 - 18时01分
+         <br><span>最后更新:</span>2017年1月16日 - 14时01分
+         <br><span>原始链接:</span><a href="/2017/01/14/how-install-node-env/" title="如何安装nodeJS环境 How to install nodeJS env">http://blog.ryuzen.com/2017/01/14/how-install-node-env/</a>
+         <br><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" title="Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)">Attribution-NonCommercial 4.0</a>
+         <p><span>转载请保留以上信息。</span></p>
+      </div>
+    
+
+    <script type="text/JavaScript">
+      //本函数ie会追加链接信息，chrome返回空，firefox因没有oncopy事件不受影响
+      document.body.oncopy=function(){
+        var isChromeOrSafri = /webkit/.test(navigator.userAgent.toLowerCase());
+        var isMozia = /firefox/.test(navigator.userAgent.toLowerCase());
+        var isIE = /msie/.test(navigator.userAgent.toLowerCase()) ;
+        //alert('ch=' + isChromeOrSafri);
+        //alert('firefox=' + isMozia);
+        //alert('ie=' + isIE);
+
+        var s="本文来源于: http://blog.ryuzen.com, 原文地址: http://blog.ryuzen.com/2017/01/14/how-install-node-env/";
+        if(isChromeOrSafri) { alert(s); }
+        else if(isIE) {
+          event.returnValue=false;
+          //For ie
+          var t=document.selection.createRange().text;      
+          //alert(s);
+          clipboardData.setData('Text','\r\n'+t+'\r\n'+s+'\r\n');
+        }
+      }
+    </script>
+</div>
+ 
 
 
 
@@ -442,16 +536,16 @@
         <div id="donate_guide" class="donate_bar center hidden">
             <!--
             
-                <a href="http://o7keinrz4.bkt.clouddn.com/alipay.jpg" title="支付宝打赏" class="fancybox" rel="article0" 
+                <a href="http://ojr8iju4u.bkt.clouddn.com/ryuzen-alipay-1080.png" title="支付宝打赏" class="fancybox" rel="article0" 
                     style="float:left;margin-left:25%;margin-right:10px;">
-                    <img src="http://o7keinrz4.bkt.clouddn.com/alipay.jpg" title="" height="164px" width="164px">
+                    <img src="http://ojr8iju4u.bkt.clouddn.com/ryuzen-alipay-1080.png" title="" height="164px" width="164px">
                 </a> 
               
 
             
-                <a href="http://o7keinrz4.bkt.clouddn.com/wechat.jpg" title="微信打赏" class="fancybox" rel="article0"
+                <a href="http://ojr8iju4u.bkt.clouddn.com/ryuzen-wechat-800.jpg" title="微信打赏" class="fancybox" rel="article0"
                     style="margin-right:30%">
-                    <img src="http://o7keinrz4.bkt.clouddn.com/wechat.jpg" title="" height="164px" width="164px">
+                    <img src="http://ojr8iju4u.bkt.clouddn.com/ryuzen-wechat-800.jpg" title="" height="164px" width="164px">
                 </a>
             
             -->
@@ -459,17 +553,17 @@
                 <tr>
                     <td>
                         
-                            <a href="http://o7keinrz4.bkt.clouddn.com/alipay.jpg" title="支付宝打赏" class="fancybox" rel="article0" 
+                            <a href="http://ojr8iju4u.bkt.clouddn.com/ryuzen-alipay-1080.png" title="支付宝打赏" class="fancybox" rel="article0" 
                                 style="float:left;margin-left:25%;margin-right:10px;">
-                                <img src="http://o7keinrz4.bkt.clouddn.com/alipay.jpg" title="" height="164px" width="164px">
+                                <img src="http://ojr8iju4u.bkt.clouddn.com/ryuzen-alipay-1080.png" title="" height="164px" width="164px">
                             </a> 
                          
                     </td>
                     <td>
                         
-                            <a href="http://o7keinrz4.bkt.clouddn.com/wechat.jpg" title="微信打赏" class="fancybox" rel="article0"
+                            <a href="http://ojr8iju4u.bkt.clouddn.com/ryuzen-wechat-800.jpg" title="微信打赏" class="fancybox" rel="article0"
                                 style="margin-right:30%">
-                                <img src="http://o7keinrz4.bkt.clouddn.com/wechat.jpg" title="" height="164px" width="164px">
+                                <img src="http://ojr8iju4u.bkt.clouddn.com/ryuzen-wechat-800.jpg" title="" height="164px" width="164px">
                             </a>
                         
                     </td>
@@ -512,6 +606,12 @@
       
     </div>
   </div>
+
+
+
+
+
+
 
  </div>
 
@@ -564,14 +664,14 @@
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-count">1</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
@@ -599,7 +699,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#this-is-a-test-post1"><span class="nav-number">1.</span> <span class="nav-text">this is a test post1</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#摘要-Summary"><span class="nav-number">1.</span> <span class="nav-text">摘要(Summary)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#nvm简介-nvm-intro"><span class="nav-number">2.</span> <span class="nav-text">nvm简介( nvm intro)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#shell代码如下-linux或OSX"><span class="nav-number">2.1.</span> <span class="nav-text">shell代码如下(linux或OSX)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#win系统-If-use-windows"><span class="nav-number">2.2.</span> <span class="nav-text">win系统 (If use windows)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#国内npm加速-speed-up-your-npm-in-chinese"><span class="nav-number">3.</span> <span class="nav-text">国内npm加速(speed up your npm in chinese)</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>

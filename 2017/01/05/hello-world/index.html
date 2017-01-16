@@ -27,7 +27,7 @@
 
 
 
-  <meta name="keywords" content="ryuzen,linux,cloud compute,iaas,kvm,python,java,openstack,zstack" />
+  <meta name="keywords" content="ryuzen,linux,cloud compute,iaas,kvm,python,java,openstack,zstack,nodejs,javascript" />
 
 
 
@@ -142,6 +142,14 @@ Quick">
           <a href="/about" rel="section">
             <i class="menu-item-icon icon-next-about"></i> <br />
             关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-todo">
+          <a href="/todo" rel="section">
+            <i class="menu-item-icon icon-next-todo"></i> <br />
+            todo
           </a>
         </li>
       
@@ -296,6 +304,11 @@ Quick">
       <div class="main-inner">
         <div id="content" class="content"> 
 
+
+
+
+
+
   <div id="posts" class="posts-expand">
     
 
@@ -356,7 +369,7 @@ Quick">
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/01/12/test-post/" rel="prev">test_post</a>
+              <a href="/2017/01/14/how-install-node-env/" rel="prev">如何安装nodeJS环境 How to install nodeJS env</a>
             
           </div>
 
@@ -370,6 +383,49 @@ Quick">
       
     </footer>
   </article>
+
+
+
+<div class="post-footer">
+    
+      <div id="eof" class="print-invisible">
+        <hr class="eof">
+      </div>
+
+      <div class="copyright" style="clear:both;">
+         <span>本文标题:</span><a href="/2017/01/05/hello-world/">Hello World</a>
+         <br><span>文章作者:</span><a href="/" title="访问 RyuZen Luo 的个人博客">RyuZen Luo</a>
+         <br><span>发布时间:</span>2017年1月5日 - 21时01分
+         <br><span>最后更新:</span>2017年1月5日 - 21时01分
+         <br><span>原始链接:</span><a href="/2017/01/05/hello-world/" title="Hello World">http://blog.ryuzen.com/2017/01/05/hello-world/</a>
+         <br><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" title="Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)">Attribution-NonCommercial 4.0</a>
+         <p><span>转载请保留以上信息。</span></p>
+      </div>
+    
+
+    <script type="text/JavaScript">
+      //本函数ie会追加链接信息，chrome返回空，firefox因没有oncopy事件不受影响
+      document.body.oncopy=function(){
+        var isChromeOrSafri = /webkit/.test(navigator.userAgent.toLowerCase());
+        var isMozia = /firefox/.test(navigator.userAgent.toLowerCase());
+        var isIE = /msie/.test(navigator.userAgent.toLowerCase()) ;
+        //alert('ch=' + isChromeOrSafri);
+        //alert('firefox=' + isMozia);
+        //alert('ie=' + isIE);
+
+        var s="本文来源于: http://blog.ryuzen.com, 原文地址: http://blog.ryuzen.com/2017/01/05/hello-world/";
+        if(isChromeOrSafri) { alert(s); }
+        else if(isIE) {
+          event.returnValue=false;
+          //For ie
+          var t=document.selection.createRange().text;      
+          //alert(s);
+          clipboardData.setData('Text','\r\n'+t+'\r\n'+s+'\r\n');
+        }
+      }
+    </script>
+</div>
+ 
 
 
 
@@ -453,16 +509,16 @@ Quick">
         <div id="donate_guide" class="donate_bar center hidden">
             <!--
             
-                <a href="http://o7keinrz4.bkt.clouddn.com/alipay.jpg" title="支付宝打赏" class="fancybox" rel="article0" 
+                <a href="http://ojr8iju4u.bkt.clouddn.com/ryuzen-alipay-1080.png" title="支付宝打赏" class="fancybox" rel="article0" 
                     style="float:left;margin-left:25%;margin-right:10px;">
-                    <img src="http://o7keinrz4.bkt.clouddn.com/alipay.jpg" title="" height="164px" width="164px">
+                    <img src="http://ojr8iju4u.bkt.clouddn.com/ryuzen-alipay-1080.png" title="" height="164px" width="164px">
                 </a> 
               
 
             
-                <a href="http://o7keinrz4.bkt.clouddn.com/wechat.jpg" title="微信打赏" class="fancybox" rel="article0"
+                <a href="http://ojr8iju4u.bkt.clouddn.com/ryuzen-wechat-800.jpg" title="微信打赏" class="fancybox" rel="article0"
                     style="margin-right:30%">
-                    <img src="http://o7keinrz4.bkt.clouddn.com/wechat.jpg" title="" height="164px" width="164px">
+                    <img src="http://ojr8iju4u.bkt.clouddn.com/ryuzen-wechat-800.jpg" title="" height="164px" width="164px">
                 </a>
             
             -->
@@ -470,17 +526,17 @@ Quick">
                 <tr>
                     <td>
                         
-                            <a href="http://o7keinrz4.bkt.clouddn.com/alipay.jpg" title="支付宝打赏" class="fancybox" rel="article0" 
+                            <a href="http://ojr8iju4u.bkt.clouddn.com/ryuzen-alipay-1080.png" title="支付宝打赏" class="fancybox" rel="article0" 
                                 style="float:left;margin-left:25%;margin-right:10px;">
-                                <img src="http://o7keinrz4.bkt.clouddn.com/alipay.jpg" title="" height="164px" width="164px">
+                                <img src="http://ojr8iju4u.bkt.clouddn.com/ryuzen-alipay-1080.png" title="" height="164px" width="164px">
                             </a> 
                          
                     </td>
                     <td>
                         
-                            <a href="http://o7keinrz4.bkt.clouddn.com/wechat.jpg" title="微信打赏" class="fancybox" rel="article0"
+                            <a href="http://ojr8iju4u.bkt.clouddn.com/ryuzen-wechat-800.jpg" title="微信打赏" class="fancybox" rel="article0"
                                 style="margin-right:30%">
-                                <img src="http://o7keinrz4.bkt.clouddn.com/wechat.jpg" title="" height="164px" width="164px">
+                                <img src="http://ojr8iju4u.bkt.clouddn.com/ryuzen-wechat-800.jpg" title="" height="164px" width="164px">
                             </a>
                         
                     </td>
@@ -523,6 +579,12 @@ Quick">
       
     </div>
   </div>
+
+
+
+
+
+
 
  </div>
 
@@ -575,14 +637,14 @@ Quick">
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-count">1</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
