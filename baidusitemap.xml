@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+  <url>
+    <loc>http://blog.ryuzen.com/2017/01/05/hello-world/</loc>
+    <lastmod>2017-01-16T10:58:25.368Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2017-01-05T13:29:24.873Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>http://blog.ryuzen.com/2017/01/14/how-install-node-env/</loc>
+    <lastmod>2017-01-16T06:05:09.648Z</lastmod>
+    <data>
+        <display>
+        <title>如何安装nodeJS环境 How to install nodeJS env</title>
+        <pubTime>2017-01-14T10:39:35.000Z</pubTime>
+        
+        <tag>原创</tag>
+         
+        <tag>安装教程</tag>
+         
+        <tag>nodejs</tag>
+         
+        <tag>linux</tag>
+         
+        <tag>nvm</tag>
+         
+        <tag>npm加速</tag>
+         
+         
+           
+             
+              <breadCrumb title="IT技能-编程语言-nodeJS" url="http://blog.ryuzen.com/categories/IT%E6%8A%80%E8%83%BD-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80-nodeJS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+</urlset>
