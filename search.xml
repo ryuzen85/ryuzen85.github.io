@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+    
+    <entry>
+      <title><![CDATA[如何安装nodeJS环境 How to install nodeJS env]]></title>
+      <url>%2F2017%2F01%2F14%2Fhow-install-node-env%2F</url>
+      <content type="text"><![CDATA[摘要(Summary)win &amp; linux 安装nodeJS， 使用nvm管理不同版本nodeJS， 国内npm加速win&amp;linux install nodejs, use NVM manage diff version nodejs, speed up download in chinese nvm简介( nvm intro) nvm可以管理不同版本nodejs，不影响系统。win系统使用nvwm替代nvm NVM can manage different version of nodejs, make your OS clean. BTW, windows use nvwm instead shell代码如下(linux或OSX)123456git clone https://github.com/creationix/nvm.gitsource nvm/nvm.sh#国内用户运行下面一条(chinese user need below statement)NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node#安装node-v6(Install nodejs-v6)nvm install 6 win系统 (If use windows)1234567#如果win用户没装gitbash，可以直接下载zip文件解压(If windows user didn't install gitbash, you can download zip file by http) git clone https://github.com/hakobera/nvmw.git#设置 d:\git\nvmw 目录到你的 PATH 环境变量中(add path)set "PATH=d:\git\nvmw;%PATH%"#加速npm从国内下载(speed up your npm in chinese)set "NVMW_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node"nvm install 6 国内npm加速(speed up your npm in chinese)npm是nodejs的包管理工具，类似apt-get。但是默认是从国外下载包，所以使用的时候可以选择国内镜像加速。(npm is a package management tool of nodejs, like apt-get in debain. But by default it download from ocean website, so you can choose to speed your npm up) 简单可以每次运行npm install的时候加registry参数。(simplely add registry arg when you run npm install )1npm --registry=https://registry.npm.taobao.org install koa 但是每次都要输registry很麻烦。可以加入环境变量ENV(linux)/PATH(win)里面(If you don’t want to type resigisty everytime, you can add it in ENV/PATH ) 1export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[Hello World]]></title>
+      <url>%2F2017%2F01%2F05%2Fhello-world%2F</url>
+      <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    </entry>
+
+    
+  
+  
+</search>
